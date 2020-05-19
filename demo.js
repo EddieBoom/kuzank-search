@@ -182,28 +182,28 @@
     function initEvent() {
         // Show Tips When Input.
         bindEvent(oInput, 'keyup', function (e) {
-            toggleTips(true);
+            // toggleTips(true);
             var ev = e || window.event;
             var target = e.target || ev.srcElement;
             var val = target.value;
             if (e.keyCode === 13) {
                 executeSearch(val);
             } else {
-                getTips(val);
+                // getTips(val);
             }
         });
         // Hide Tips When Click Document.
-        bindEvent(document, 'click', function (e) {
-            var ev = e || window.event;
-            var target = e.target || ev.srcElement;
-            if (target.className === 'tips-item') {
-                executeSearch(target.innerHTML);
-            } else if (target.className === 'search-type') {
-                changeSearchType(target);
-            } else {
-                toggleTips(false);
-            }
-        });
+        // bindEvent(document, 'click', function (e) {
+        //     var ev = e || window.event;
+        //     var target = e.target || ev.srcElement;
+        //     if (target.className === 'tips-item') {
+        //         executeSearch(target.innerHTML);
+        //     } else if (target.className === 'search-type') {
+        //         changeSearchType(target);
+        //     } else {
+        //         toggleTips(false);
+        //     }
+        // });
         // Click Search Button to Search
         bindEvent(oButton, 'click', function (e) {
             executeSearch(oInput.value);
