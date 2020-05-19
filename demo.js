@@ -15,7 +15,7 @@
         {title: '谷歌', link: 'https://www.google.com/search?q='},
         {title: '秘迹', link: 'https://mijisou.com/?category_general=on&time_range=&language=zh-CN&pageno=1&q='},
         {title: '百度', link: 'https://www.baidu.com/baidu?ie=utf-8&wd='},
-        {title: 'Bing', link: 'https://cn.bing.com/search?q='},
+        {title: '必应', link: 'https://cn.bing.com/search?q='},
         {title: '搜狗', link: 'https://www.sogou.com/web?query='},
         {title: '微信', link: 'https://weixin.sogou.com/weixin?type=2&ie=utf8&query='},
     ]
@@ -87,7 +87,8 @@
 
     function executeSearch(keywords) {
         toggleTips(false);
-        window.open(searchTypes[activeIndex].link + keywords);
+        window.location.href = searchTypes[activeIndex].link + keywords;
+        // window.open(searchTypes[activeIndex].link + keywords);
     }
 
     function changeSearchType(el) {
