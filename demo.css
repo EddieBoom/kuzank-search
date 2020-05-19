@@ -29,11 +29,12 @@ html, body {
 .search-box {
     position: relative;
     width: 608px;
-    margin: 5% auto 0;
+    margin: 0% auto 0;
 }
 
 .search-types__list {
     padding: 8px 0;
+    height: 16px;
 }
 
 .search-type {
@@ -121,4 +122,42 @@ html, body {
 .no-tips {
     text-align: center;
     color: #999;
+}
+
+.tool-box {
+    position: relative;
+    width: 608px;
+    margin: 20px auto 0;
+}
+
+.tool-box-div {
+    padding: 5px 8px;
+    margin: 6px;
+    border: 1px solid rgba(181, 178, 182, 0.36);
+    border-radius: 4px;
+}
+
+.tool-item {
+    margin-bottom: 6px;
+}
+
+.tool-title {
+    font-size: 1.2em;
+    padding: 2px 0 6px 0;
+}
+
+.tool-item-link {
+    padding-left: 4px;
+    color: rgba(24, 144, 255, 0.95);
+    text-decoration: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    -webkit-transition: color .3s;
+    transition: color .3s;
+    -webkit-text-decoration-skip: objects;
+}
+
+.tool-item-link:hover {
+    color: #da280a;
 }

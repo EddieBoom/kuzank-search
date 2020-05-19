@@ -1,24 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>kuzank Search</title>
-  <link rel="stylesheet" type="text/css" href="./demo.css"/>
+    <meta charset="UTF-8">
+    <title>kuzank Search</title>
+    <link rel="stylesheet" type="text/css" href="./demo.css"/>
+    <link rel="stylesheet" type="text/css" href="./flex.css"/>
 </head>
 <body>
-  <div id="app" class="flex-jsonp__app">
+<div id="app" class="flex-jsonp__app">
     <div class="search-box">
-      <h1 class="logo">Kuzank Search</h1>
-      <div class="search-types__list" id="searchTypes"></div>
-      <div class="search-input__group">
-        <input type="text" class="search-input" id="input"/>
-        <input type="button" value="SEARCH" class="search-btn" id="button"/>
-      </div>
-      <div class="search-types__list" id="searchTypes-1"></div>
-      <ul class="search-tips__dropdown" id="dropdown"></ul>
+        <h1 class="logo">Kuzank Search</h1>
+        <div class="search-types__list" id="searchTypes"></div>
+        <div class="search-input__group">
+            <input type="text" class="search-input" id="input"/>
+            <input type="button" value="SEARCH" class="search-btn" id="button"/>
+        </div>
+        <ul class="search-tips__dropdown" id="dropdown"></ul>
     </div>
-  </div>
-  <script type="text/javascript" src="./index.js"></script>
-  <script type="text/javascript" src="./demo.js"></script>
+    <div class="tool-box">
+        <div class="d-flex">
+<!--            html 模板                  -->
+<!--            <div class="flex-1 d-border">-->
+<!--                <div class="tool-box-div">-->
+<!--                    <div class="tool-title">WebSite</div>-->
+<!--                    <div class="tool-item">-->
+<!--                        <span>*</span>-->
+<!--                        <a class="tool-item-link" target="_blank" href="http://www.ruanyifeng.com">阮一峰</a>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+            <div id="firstTools" class="flex-1 d-border"></div>
+            <div id="secondTools" class="flex-1 d-border"></div>
+            <div id="thirdTools" class="flex-1 d-border"></div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="./index.js"></script>
+<script type="text/javascript" src="./demo.js"></script>
 </body>
 </html>
